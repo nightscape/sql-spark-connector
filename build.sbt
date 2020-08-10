@@ -30,3 +30,6 @@ scalacOptions := Seq("-unchecked", "-deprecation", "evicted")
 
 // Exclude scala-library from this fat jar. The scala library is already there in spark package.
 assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = false)
+
+sources in (Compile,doc) := Seq.empty
+publishArtifact in (Compile, packageDoc) := false
