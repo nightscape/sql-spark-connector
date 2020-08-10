@@ -4,10 +4,10 @@ organization := "com.microsoft.sqlserver.jdbc.spark"
 
 version := "1.0.0"
 
-scalaVersion := "2.12.11"
-ThisBuild / useCoursier := false
-val sparkVersion = "3.0.0"
+crossScalaVersions := Seq("2.12.12", "2.11.12")
+scalaVersion := crossScalaVersions.value.head
 
+val sparkVersion = sys.props.get("spark.version").getOrElse("3.0.0")
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint")
 
 libraryDependencies ++= Seq(
