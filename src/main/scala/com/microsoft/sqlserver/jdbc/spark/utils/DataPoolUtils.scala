@@ -4,7 +4,7 @@ import java.net.{InetAddress, UnknownHostException}
 import java.nio.file.{Files, Paths}
 
 import org.apache.spark.deploy.history.LogInfo
-import org.apache.spark.internal.Logging
+import com.microsoft.sqlserver.jdbc.spark.Logging
 import org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils.createConnectionFactory
 import org.json4s._
 import org.json4s.jackson.JsonMethods._

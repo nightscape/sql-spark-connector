@@ -2,7 +2,7 @@ package com.microsoft.sqlserver.jdbc.spark
 
 import java.sql.{Connection, ResultSetMetaData, SQLException}
 
-import org.apache.spark.internal.Logging
+import com.microsoft.sqlserver.jdbc.spark.Logging
 import org.apache.spark.sql.{DataFrame}
 import com.microsoft.sqlserver.jdbc.spark.BulkCopyUtils._
 import org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions

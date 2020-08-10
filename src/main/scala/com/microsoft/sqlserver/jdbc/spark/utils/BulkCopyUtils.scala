@@ -2,7 +2,7 @@ package com.microsoft.sqlserver.jdbc.spark
 
 import java.sql.{Connection, ResultSet, ResultSetMetaData, SQLException}
 
-import org.apache.spark.internal.Logging
+import com.microsoft.sqlserver.jdbc.spark.Logging
 import org.apache.spark.sql.{DataFrame, Row, SQLContext}
 import org.apache.spark.sql.types.{ByteType, DataType, ShortType, StructType}
 import org.apache.spark.sql.jdbc.JdbcDialects

@@ -4,7 +4,7 @@ import org.apache.spark.sql.{DataFrame, Row, SQLContext, SaveMode}
 import java.sql.{Connection, ResultSet, ResultSetMetaData, SQLException}
 
 import com.microsoft.sqlserver.jdbc.spark.BulkCopyUtils.{getColMetaData, getEmptyResultSet, mssqlTruncateTable}
-import org.apache.spark.internal.Logging
+import com.microsoft.sqlserver.jdbc.spark.Logging
 import org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions
 import org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils.tableExists
 

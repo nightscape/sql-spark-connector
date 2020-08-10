@@ -3,7 +3,7 @@ package com.microsoft.sqlserver.jdbc.spark
 import java.sql.{Connection, ResultSetMetaData, SQLException}
 
 import com.microsoft.sqlserver.jdbc.spark.BulkCopyUtils.{executeUpdate, savePartition}
-import org.apache.spark.internal.Logging
+import com.microsoft.sqlserver.jdbc.spark.Logging
 import org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils
 import org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils.createConnectionFactory
 import org.apache.spark.sql.{DataFrame, Row}

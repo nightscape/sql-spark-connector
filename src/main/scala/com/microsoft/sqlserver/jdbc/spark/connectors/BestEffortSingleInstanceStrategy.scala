@@ -3,7 +3,7 @@ package com.microsoft.sqlserver.jdbc.spark
 import java.sql.ResultSetMetaData
 
 import com.microsoft.sqlserver.jdbc.spark.BulkCopyUtils.{savePartition}
-import org.apache.spark.internal.Logging
+import com.microsoft.sqlserver.jdbc.spark.Logging
 import org.apache.spark.sql.{DataFrame, Row}
 
 /**
